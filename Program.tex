@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage[most]{tcolorbox}
 \usepackage{helvet}
+\usepackage{framed}
 \renewcommand{\familydefault}{\sfdefault}
 \begin{document}
 \newcommand\song[2]{\item\raggedright\textbf{#1}\dotfill \raggedleft\emph{#2}\par}
@@ -126,17 +127,18 @@ November 15, 16, 17, 2024
     \Large Sample \\Quarter Page Ad
 \end{minipage}
 
-\pagebreak
-\begin{minipage}[c][0.5\textheight]{\linewidth}
+\begin{minipage}[c][0.5\textheight]{0.5\linewidth}
+\begin{framed}
+\centering
+    \Large Sample \\Quarter Page Ad
+\end{framed}
+\end{minipage}
+\begin{minipage}[c][0.5\textheight]{0.5\linewidth}
+\centering
+    \Large Sample \\Quarter Page Ad
+\end{minipage}
+\begin{minipage}[c][0.25\textheight]{\linewidth}
 \centering
     \Large Sample \\ Half Page Ad
-\end{minipage}
-\begin{minipage}[c][0.5\textheight]{0.5\linewidth}
-\centering
-    \Large Sample \\Quarter Page Ad
-\end{minipage}
-\begin{minipage}[c][0.5\textheight]{0.5\linewidth}
-\centering
-    \Large Sample \\Quarter Page Ad
 \end{minipage}
 \end{document}
