@@ -9,6 +9,7 @@
 \usepackage{framed}
 \usepackage{geometry}
 \usepackage{draftwatermark}
+\usepackage[export]{adjustbox}
 \SetWatermarkText{DRAFT}
 \SetWatermarkScale{1}
 \renewcommand{\familydefault}{\sfdefault}
@@ -16,7 +17,7 @@
 \newcommand\song[2]{\item\raggedright\textbf{#1}\dotfill \raggedleft\emph{#2}\par}
 \newcommand\cast[2]{{#2}\dotfill \emph{#1}\newline}
 \newcommand\crew[2]{\raggedright\textbf{#1}\dotfill \raggedleft\emph{#2}\par}
-\newcommand\choir[1]{\centering\emph{#1}\par}
+\newcommand\choir[1]{\emph{#1}}
 \pagestyle{empty} % No page numbering
 \setlength\parindent{0em} % no intentation
 
@@ -36,11 +37,14 @@ www.concordtheatricals.com
 \end{center}
 \pagebreak
 \begin{minipage}[c][\textheight]{\linewidth}
+\begin{framed}
 \begin{center}
 \begin{minipage}{0.25\linewidth}
-\Large{\fontfamily{ptm}\selectfont \textbf{The\\ Broadway\\ Company}}
 \end{minipage}\\
+\Large{\fontfamily{ptm}\selectfont \textbf{The\\ Broadway\\ Company}}
+
 \hfill\newline
+\hspace*{11mm}\includegraphics[scale=0.2]{media/theaterLogo.png}
 \hfill\newline
 \fontfamily{bch}\selectfont
 \large{\textbf{\emph{Producer of}}}\\
@@ -57,79 +61,9 @@ Angels in America\\
 Supports Community Theater \\
 and supports \emph{\textbf{ShirleyArts!}}
 \end{center}
+\end{framed}
 \end{minipage}
-%Musical Number/Scenes
-\begin{center}
-\Large \textbf{MUSICAL NUMBERS}
-\end{center}
 
-\large \textbf{ACT ONE}
-\normalsize
-
-%Songs here to add create an entry \song{Title}{Performer(s)}
-\begin{enumerate}
-\song{Forward-underscoring}{Band}
-\song{Fanfare}{Band}
-\song{Christmas Time is Nunsense Time}{Full Cast}
-\song{Nutcracker/Joy To The World}{Louise, Jimmy, \\Frannie, John}
-\song{We Wish You a Merry Christmas}{Sister Amnesia \\\& The Audience}
-\song{Santa's Little Teapot}{The Students}
-\song{Twelve Days Prior To Christmas}{Sister Robert Anne \\\& The Students}
-\song{The Christmas Box}{Father Virgil}
-\song{Santa Ain't Comin' to Our House}{Sister Amnesia \\with Sisters Hubert, Robert Anne,\\ Father Virgil \& The Choir}
-\song{The Wassail Song}{Sister Amnesia \& The Students}
-\song{A Carnival Christmas}{Reverend Mother\\ with The Students}
-\song{The Holly and the Ivy (Ivory)}{Sister Amnesia \\ \& The Students}
-\song{Christmas Time}{Band}
-\song{The Nutcracker Ballet}{Reverend Mother, \\Sisters Hubert, Robert Anne,\\ Wilhelm, Luke, Amnesia, \& Celeste, \\Father Virgil \& The Students}
-\end{enumerate}
-
-\pagebreak
-\large \textbf{ACT TWO}
-\normalsize
-\begin{enumerate}
-\song{Three Hundred Sixty-four Days}{Reverend Mother, Sisters Hubert, Robert Anne, Amnesia,\\ Wilhelm, Luke \& Celeste}
-\song{Jesus Was Born in Brooklyn}{Sister Robert Anne \\with Sisters Hubert, Amnesia,\\ Wilhelm, Luke \& Celeste, \\Father Virgil, The Students \& The Choir}
-\song{In the Convent}{Sister Hubert, Reverend Mother with The Full Cast}
-\song{The Three Kings}{Sisters Wilheim, Luke \& Celeste}
-\song{The First Noel (Leopards)}{Sister Amnesia \& The Students}
-\song{All I Want for Christmas}{Sister Robert Anne}
-\song{Christmas Sing Along}{The Full Cast\\ \& The Audience}
-\begin{framed}
-\raggedright
-\emph{{We wish you peace on earth good will and cheer, \\
-And all good things in the coming year.\\
-May each day be merry and bright\\
-And filled with blessings ev'ry night.}}
-\end{framed}
-\song{Gloria}{The Full Cast}
-%Reverend Mother, Sisters Hubert, \\Robert Anne, Amnesia, Wilhelm, Luke \& Celeste, \& Father Virgil}
-\song{A Brand New School}{Reverend Mother,\\ Sisters Hubert, Robert Anne, Amnesia,\\ Willhelm, Luke, \& Celeste \& Father Virgil}
-\pagebreak
-\song{It's Better to Give}{Sister Hubert with The Full Cast}
-\song{Reprise: Christmas Time is Nunsense Time}{The Full\\ Cast}
-\song{Bows (A Carnival Christmas)}{Band}
-\end{enumerate}
-\begin{framed}
-    \begin{minipage}[c][0.25\textheight]{0.5\linewidth}
-        \raggedright\includegraphics[scale=0.2]{media/st_nicholas_logo.jpeg}
-    \end{minipage}
-    \raggedright
-    \begin{minipage}[0.4\textheight]{0.4\linewidth}
-    \raggedright Thank you to St. Nicholas Parish for the use of St. Anthony's Church Hall for our performances.	
-    \end{minipage}
-\end{framed}
-\begin{framed}
-    \begin{minipage}[c][0.25\textheight]{0.5\linewidth}
-        \includegraphics[scale=0.5]{media/ayer_shirley_district_seal.jpeg}
-    \end{minipage}
-    \raggedright
-    \begin{minipage}[0.25\textheight]{0.4\linewidth}
-    \raggedright Thank you to the Ayer/Shirley Regional School District for the use of the MIddle School for our rehearsals.	
-    \end{minipage}
-\end{framed}
-
-\pagebreak
 %Cast List
 \begin{center}
 \Large \textbf{THE \emph{SHIRLEYARTS!} CAST OF NUNCRACKERS}
@@ -155,13 +89,59 @@ And filled with blessings ev'ry night.}}
 \cast{Nolan Cotter}{John}
 \cast{Iris Ashman Kelly}{Maria}\\
 \textbf{THE MOUNT ST HELEN'S CHOIR}\\
-\choir{Angie Edmunds}
-\choir{Donna King}
-\choir{Diane King}
-\choir{Marga Marchetti}
-\choir{Karen Rau}
+\choir{Angie Edmunds}, \choir{Donna King}, \choir{Diane King}, \\ \choir{Marga Marchetti}, \choir{Karen Rau}
+
 
 \pagebreak
+%Musical Number/Scenes
+\begin{center}
+\Large \textbf{MUSICAL NUMBERS}
+\end{center}
+
+\large \textbf{ACT ONE}
+\normalsize
+
+%Songs here to add create an entry \song{Title}{Performer(s)}
+\begin{enumerate}
+\song{Forward-underscoring}{Band}
+\song{Fanfare}{Band}
+\song{Christmas Time is Nunsense Time}{Full Cast}
+\song{Nutcracker/Joy To The World}{Louise, Jimmy, \\Frannie, John}
+\song{We Wish You a Merry Christmas}{Sister Amnesia \\\& The Audience}
+\song{Santa's Little Teapot}{The Students}
+\song{Twelve Days Prior To Christmas}{Sister Robert Anne \\\& The Students}
+\song{The Christmas Box}{Father Virgil}
+\song{Santa Ain't Comin' to Our House}{Sister Amnesia \& Sisters Hubert, Robert Anne, Father Virgil \& The Choir}
+\song{The Wassail Song}{Sister Amnesia \& The Students}
+\song{A Carnival Christmas}{Reverend Mother\\ with The Students}
+\song{The Holly and the Ivy (Ivory)}{Sister Amnesia \\ \& The Students}
+\song{Christmas Time}{Band}
+\song{The Nutcracker Ballet}{Reverend Mother, \\Sisters Hubert, Robert Anne, Wilhelm, Luke, Amnesia, \& Celeste, Father Virgil \& The Students}
+\end{enumerate}
+\large \textbf{ACT TWO}
+\normalsize
+\begin{enumerate}
+\song{Three Hundred Sixty-four Days}{Reverend Mother, Sisters Hubert, Robert Anne, Amnesia, Wilhelm, Luke \& Celeste}
+\song{Jesus Was Born in Brooklyn}{Sister Robert Anne \\with Sisters Hubert, Amnesia, Wilhelm, Luke \& Celeste, Father Virgil, The Students \& The Choir}
+\song{In the Convent}{Sister Hubert, Reverend Mother with The Full Cast}
+\song{The Three Kings}{Sisters Wilheim, Luke \& Celeste}
+\song{The First Noel (Leopards)}{Sister Amnesia \& The Students}
+\song{All I Want for Christmas}{Sister Robert Anne}
+\song{Christmas Sing Along}{The Full Cast\\ \& The Audience}
+\begin{framed}
+\raggedright
+\emph{{We wish you peace on earth good will and cheer, \\
+And all good things in the coming year.\\
+May each day be merry and bright\\
+And filled with blessings ev'ry night.}}
+\end{framed}
+\song{Gloria}{The Full Cast}
+%Reverend Mother, Sisters Hubert, \\Robert Anne, Amnesia, Wilhelm, Luke \& Celeste, \& Father Virgil}
+\song{A Brand New School}{Reverend Mother,\\ Sisters Hubert, Robert Anne, Amnesia,\\ Willhelm, Luke, \& Celeste \& Father Virgil}
+\song{It's Better to Give}{Sister Hubert with The Full Cast}
+\song{Reprise: Christmas Time is Nunsense Time}{\\The Full Cast}
+\song{Bows (A Carnival Christmas)}{Band}
+\end{enumerate}
 %Production Team
 \begin{center}
 \Large \textbf{NUNCRACKERS STAFF}
@@ -184,14 +164,70 @@ And filled with blessings ev'ry night.}}
 \hfill\\
 Emily Ashman, Bret Bahe, Tony Dean, Kathy Ellis, Roy Ellis,\\ Adam Grynoch, Tess Grynoch, Mike King, Vicki Landry,\\ Chad Lindstruth, Jackson Lindstruth, Laurie Marcinkewicz, Meredith Marcinkewicz, Bob Marchetti, Marga Marchetti,\\ Jen Pacheco, Karen Rau, John Robinson, Asia Sanford,\\ Zack Sickorez, Sarah Stevens, Natalie Wisnewski
 \end{center}
+\pagebreak
 \begin{framed}
-\begin{minipage}[c][0.25\textheight]{0.5\linewidth}
-	\raggedright\includegraphics[scale=0.4]{media/st_anna_logo.png}
+    \begin{minipage}[c][0.1\textheight]{0.35\linewidth}
+        \raggedright\includegraphics[scale=0.15]{media/st_nicholas_logo.jpeg}
+    \end{minipage}
+    \raggedright
+    \begin{minipage}[0.4\textheight]{0.6\linewidth}
+    \raggedright Thank you to St. Nicholas Parish for the use of St. Anthony's Church Hall for our performances.	
+    \end{minipage}
+\end{framed}
+\begin{framed}
+    \begin{minipage}[c][0.12\textheight]{0.35\linewidth}
+        \includegraphics[scale=0.35]{media/ayer_shirley_district_seal.jpeg}
+    \end{minipage}
+    \raggedright
+    \begin{minipage}[0.12\textheight]{0.6\linewidth}
+    \raggedright Thank you to the Ayer/Shirley Regional School District for the use of the MIddle School for our rehearsals.	
+    \end{minipage}
+\end{framed}
+
+\begin{framed}
+\begin{minipage}[c][0.12\textheight]{0.35\linewidth}
+	\raggedright\includegraphics[scale=0.35]{media/st_anna_logo.png}
 \end{minipage}
 \raggedright
-\begin{minipage}[0.25\textheight]{0.4\linewidth}
+\begin{minipage}[0.12\textheight]{0.6\linewidth}
 \raggedright Thank you to St. Anna Catholic School for the loan of our girls' school uniforms.	
 \end{minipage}
+\end{framed}
+\begin{framed}
+\begin{minipage}[c][0.12\textheight]{0.35\linewidth}
+	\raggedright\includegraphics[scale=0.05]{media/trinityChapel.jpg}
+\end{minipage}
+\raggedright
+\begin{minipage}[0.12\textheight]{0.6\linewidth}
+\raggedright Thank you to Trinity Chapel for offering extra practice space.	
+\end{minipage}
+\end{framed}
+\begin{framed}
+\begin{minipage}[c][0.12\textheight]{0.35\linewidth}
+	\raggedright\includegraphics[scale=0.25]{media/firstChurch.png}
+\end{minipage}
+\raggedright
+\begin{minipage}[0.12\textheight]{0.6\linewidth}
+\raggedright Thank you First Church Sterling for the loan of the choir robes.	
+\end{minipage}
+\end{framed}
+\pagebreak
+\begin{framed}
+\begin{minipage}[c][0.5\textheight]{0.4\linewidth}
+	\centering
+    \includegraphics[scale=0.05]{media/bull_logo_black_large.png}\\
+    \small{215 Great Rd.\\
+    Shirley, MA 01464}
+\end{minipage}
+\begin{minipage}[c][0.5\textheight]{0.4\linewidth}
+\centering
+   \Large \textit{Congratulations ShirleyArts!\\
+   Break a leg!}
+\end{minipage}
+\end{framed}
+\begin{framed}
+EducareSolutions recommends \textit{ShirleyArts!} for their commitment to education and inclusivity.\\
+\includegraphics[scale=1.1]{media/educare_business_card.png}
 \end{framed}
 \pagebreak
 \begin{center}
@@ -221,24 +257,6 @@ Bull Run Restaurant\\215 Great Rd (Route 2A)\\
 Shirley, MA 01464 \\
 For information about Rotary and how to join,
 www.ayerrotary.com \\
-\pagebreak
-\begin{framed}
-\begin{minipage}[c][0.5\textheight]{0.4\linewidth}
-	\centering
-    \includegraphics[scale=0.05]{media/bull_logo_black_large.png}\\
-    \small{215 Great Rd.\\
-    Shirley, MA 01464}
-\end{minipage}
-\begin{minipage}[c][0.5\textheight]{0.4\linewidth}
-\centering
-   \Large \textit{Congratulations ShirleyArts!\\
-   Break a leg!}
-\end{minipage}
-\end{framed}
-\begin{framed}
-EducareSolutions recommends \textit{ShirleyArts!} for their commitment to education and inclusivity.\\
-\includegraphics[scale=1.1]{media/educare_business_card.png}
-\end{framed}
 %\begin{minipage}[c][0.5\textheight]{0.5\linewidth}
 %\centering
 %    \Large Sample \\Quarter Page Ad
